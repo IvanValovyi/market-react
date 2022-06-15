@@ -1,0 +1,129 @@
+@import './mixin'
+
+.basket
+    @include flex (center, center)
+    .icon
+        @include flex (center, center)
+        position: relative
+        svg
+            width: 50px
+            height: 50px
+            position: relative
+            z-index: 1
+            @media ( max-width: 500px )
+                width: 30px
+                height: 30px
+        .count
+            position: absolute
+            z-index: 2
+            top: 14px
+            left: 12px
+            font-size: 16px
+            margin: 0
+            padding: 2px 6px
+            line-height: 1
+            color: white
+            background: #33333300
+            &.ten
+                left: 7px
+            @media ( max-width: 500px )
+                top: 6px
+                left: 4px
+                font-size: 12px
+                &.ten
+                    left: 1px
+                
+    .basket_menu
+        color: black
+        position: absolute
+        top: 0
+        left: 0
+        width: 100vw
+        height: 100vh
+        overflow-x: hidden
+        background: white
+        z-index: 10
+        transform: translateX(-100%)
+        transition: 0.5s
+        &.active
+            transform: translateX(0)
+        .close
+            position: absolute
+            top: 20px
+            right: 20px
+            padding: 5px
+            fill: black
+            width: 25px
+            height: 25px
+            cursor: pointer
+        .title
+            font-size: 30px
+            margin-top: 15px
+            font-weight: 500
+            width: 100%
+            text-align: center
+        .basket_list
+            @include flex (space-evenly, center)
+            flex-wrap: wrap
+            margin-top: 35px
+            .basket_el
+                position: relative
+                @include flex (flex-start, center)
+                border: 1px solid black
+                border-radius: 5px
+                padding:15px
+                margin-bottom: 20px
+                img
+                    width: 300px
+                    margin-right: 15px
+                    border-radius: 5px
+                p.name
+                    font-size: 20px
+                    font-weight: 500
+                p.price 
+                    font-size: 16px
+                    margin: 10px 0
+                .buy
+                    padding: 5px 10px
+                    cursor: pointer
+                    font-size: 15px
+                .delete
+                    position: absolute
+                    top: 0
+                    right: 0
+                    border-top-right-radius: 5px
+                    padding: 5px
+                    background: red
+                    color: white
+                    font-size: 15px
+                    cursor: pointer
+                @media ( max-width: 700px )
+                    img
+                        width: 170px
+                        margin-right: 10px
+                    p.name
+                        font-size: 18px
+                    p.price 
+                        font-size: 14px
+                        margin: 7px 0
+                    .buy
+                        padding: 3px 7px
+                        font-size: 14px
+                    .delete
+                        font-size: 14px
+
+                @media ( max-width: 440px )
+                    padding: 7px
+                    img
+                        width: 140px
+                        margin-right: 7px
+                    p.name
+                        font-size: 16px
+                        max-width: 100px
+                        margin-top: 13px
+                    p.price 
+                        font-size: 12px
+                    .buy
+                        font-size: 12px
+                    .delete
+                        font-size: 12px

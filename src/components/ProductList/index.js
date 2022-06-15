@@ -1,30 +1,25 @@
-import React from "react"
+import React, {useEffect, useState} from "react"
 
-import { Link, Outlet, useParams } from "react-router-dom"
+import { Outlet, useParams } from "react-router-dom"
 
-import Product from "./Product"
+import ProductListComponent from "./ProductList"
+
+import { get_data } from "../../fetch"
 
 function ProductList(){
     let productId = useParams().productId
-    let products = [{name:'Prod one'}, {name:'Prod two'}, {name:'Prod three'}]
+    
+    const [products, setProducts] = useState([])
+
+    useEffect(()=>{
+        get_data('https://market-api-ivan.herokuapp.com/products', setProducts)
+    },[])
 
     return(
         <div className="product_blok">
             { !productId 
                 ?
-                <div className="product_list">
-                    <p>Product List</p>
-
-                    <div>{
-                        products.map(el=>{
-                            return(
-                                <Link to={`/shop/${products.indexOf(el)+1}`} key={products.indexOf(el)}>
-                                    <Product product={el}/>
-                                </Link>
-                            )
-                        })
-                    }</div>
-                </div>
+                <ProductListComponent products={products}/>
                 :
                 <Outlet/>
             }

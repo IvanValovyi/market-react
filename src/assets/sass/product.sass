@@ -1,0 +1,60 @@
+@import './mixin'
+
+
+.product
+    @include flex (center, center, column)
+    width: calc( 100% / 3 - 60px )
+    margin: 20px
+    box-shadow: 0 0 4px 8px #aca8a8
+    
+    border-bottom-left-radius: 10px
+    border-bottom-right-radius: 10px
+    @media ( max-width: 1024px )
+        width: calc( 100% / 2 - 44px )
+        margin: 15px
+
+    @media ( max-width: 800px )
+        width: calc( 100% - 44px )
+        margin: 15px
+    .product_link
+        width: calc( 100% - 20px )
+        padding: 10px
+        @media ( max-width: 800px )
+            width: calc( 100% - 14px )
+            padding: 7px
+        color: black
+        text-align: center
+    .image
+        background-position: center
+        background-size: cover
+        background-repeat: no-repeat
+        height: 370px
+        width: 100%
+        margin-bottom: 15px
+        position: relative
+        @media ( max-width: 1024px )
+            height: 500px
+        @media ( max-width: 450px )
+            height: 370px
+    p
+        line-height: 1
+    p.name
+        font-size: 24px
+        font-weight: 500
+    p.price
+        font-size: 20px
+        margin: 15px 0
+        font-weight: 400
+    .buttons
+        width: 100%
+        border-top: 1px solid #333
+        padding-top: 10px
+        padding-bottom: 10px
+        @media ( max-width: 1024 )
+            
+        @include flex (space-around, center)
+        button
+            padding: 5px 10px
+            font-size: 18px
+            position: relative
+            z-index: 2

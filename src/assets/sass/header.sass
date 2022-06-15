@@ -1,0 +1,48 @@
+@import './mixin'
+
+header
+    position: relative
+    @include flex (space-between, center)
+    background: black
+    color: white
+    padding: 10px 0
+    .logo, nav.desctop, .buttons
+        @include flex (center, center)
+        flex: 1
+    @media ( max-width: 1024px )
+        .logo
+            justify-content: flex-start
+            margin-left: 20px
+        .buttons
+            justify-content: flex-end
+            margin-right: 20px
+            .basket .icon
+                margin-right: 20px
+            
+    .logo
+        font-size: 36px
+        font-weight: 100
+        font-style: italic
+        line-height: 1
+        @media ( max-width: 500px )
+            font-size: 28px
+        @media ( max-width: 375px )
+            font-size: 24px
+            flex: 1.5
+    svg
+        fill: white
+    nav.desctop
+        a
+            padding: 3px 5px
+            margin: 0 5px
+            border: 1px solid white
+            line-height: 1
+            font-size: 20px
+            background: black
+            transition: 0.3s
+            &:hover
+                background: white
+                color: black
+        @media ( max-width: 1024px )
+            display: none
+            

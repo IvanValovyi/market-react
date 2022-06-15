@@ -1,0 +1,48 @@
+@import './mixin'
+
+.search_page
+    width: 100%
+    overflow-y: auto
+
+.search
+    svg
+        width: 35px
+        height: 35px
+        margin-right: 20px
+    .search_menu
+        position: absolute
+        top: -100%
+        right: 0
+        border-left: 1px solid white
+        opacity: 0
+        transition: 0.5s
+        z-index: 15
+        background: black
+        height: 100%
+        width: calc( 100% / 3 )
+        @include flex (center, center)
+        &.active
+            top: 0%
+            opacity: 1
+        input, button
+            padding: 5px
+            border-radius: 10px
+            font-size: 16px
+        input
+            background: #00000000
+            border: 1px solid white
+            color: white
+        button
+            margin-left: 5px
+            background: black
+            color: white
+            border: 1px solid white
+            cursor: pointer
+            transition: 0.3s
+            &:hover
+                background: white
+                color: black
+
+@media (max-width: 1024px )
+    header .search
+        display: none

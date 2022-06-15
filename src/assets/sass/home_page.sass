@@ -1,0 +1,208 @@
+.home_page
+    h2.title
+        text-align: center
+        margin-top: 20px
+        font-size: 48px
+    h3.subtitle
+        font-size: 36px
+        margin-bottom: 10px
+    p
+        font-size: 18px
+        line-height: 170%
+        letter-spacing: 1px
+        margin: 10px 0
+
+    .what_is_this, .why_quality_closes, .why_people_like_this, .links
+        padding: 50px
+
+    .why_quality_closes 
+        background: linear-gradient(-90deg, #08025c, black)
+        color: white
+        .preferance
+            display: flex
+            align-items: center
+            justify-content: flex-start
+            flex-direction: column
+            position: relative
+            padding-top: 20px
+            margin-top: 20px
+            &::before
+                content:''
+                position: absolute
+                top: 0
+                left: 50%
+                transform: translateX(-50%)
+                width: 70%
+                height: 1px
+                background: #ffffff81
+            h4
+                font-size: 28px
+                font-weight: 300
+                margin-bottom: 20px
+            .list
+                width: 100%
+                display: flex
+                align-items: center
+                justify-content: space-around
+                li
+                    display: flex
+                    align-items: center
+                    justify-content: center
+                    padding: 5px 15px
+                    box-shadow: 0 0 4px 2px #ffffff
+                    border-radius: 10px
+                    svg
+                        width: 20px
+                        height: 20px
+                        margin-right: 15px
+                        fill: white
+                    p
+                        line-height: 1
+
+    .why_people_like_this .like_list
+        display: flex
+        align-items: center
+        justify-content: flex-start
+        flex-direction: column
+        .item
+            display: flex
+            align-items: center
+            justify-content: space-between
+            padding: 20px
+            background: #f8f2f2
+            img, .text
+                width: 50%
+            img
+                border-radius: 10px
+                box-shadow: 0 0 4px 1px #d4d0d0
+            .text
+                padding: 20px
+                border-right: 1px solid #817e7e
+                position: relative
+                &::before
+                    content:''
+                    position: absolute
+                    width: 30%
+                    height: 0px
+                    box-shadow: 0 0 4px 2px #53585570
+                    bottom: 0
+                    right: 20px
+                &::after
+                    content:''
+                    position: absolute
+                    width: 30%
+                    height: 0px
+                    box-shadow: 0 0 4px 2px #53585570
+                    top: 0
+                    left: 20px
+                h4
+                    font-size: 24px
+                    font-weight: 300
+                    color: red
+            &.reverse
+                flex-direction: row-reverse
+                background: white
+                .text
+                    border-right: none
+                    border-left: 1px solid #817e7e
+                    &::before
+                        right: none
+                        left: 20px
+                    &::after
+                        left: 100%
+                        transform: translateX(calc( -100% - 20px ))
+    
+    .links
+        display: flex
+        align-items: center
+        justify-content: center
+        a
+            margin: 0 20px
+            padding: 5px 10px
+            border: 1px solid black
+            border-radius: 10px
+            font-size: 24px
+            transition: 0.3s
+            color: black
+            &:hover 
+                background: black
+                color: white
+
+@media ( max-width: 1250px )
+    .home_page
+        h2.title
+            font-size: 36px
+        h3.subtitle
+            font-size: 30px
+        p
+            font-size: 16px
+        .why_people_like_this .like_list .item .text h4
+            font-size: 20px
+        .why_quality_closes .preferance h4
+            font-size: 24px
+
+@media ( max-width: 1050px )
+    .home_page
+        h2.title
+            font-size: 32px
+        h3.subtitle
+            font-size: 26px
+        p
+            font-size: 15px
+        .why_people_like_this .like_list .item .text h4
+            font-size: 18px
+        .why_quality_closes .preferance h4
+            font-size: 20px
+        .what_is_this, .why_quality_closes, .why_people_like_this, .links
+            padding: 30px
+
+@media ( max-width: 1000px )
+    .home_page
+        .why_people_like_this 
+            h3
+                text-align: center
+            .like_list .item
+                padding: 20px 0
+                &, &.reverse
+                    justify-content: flex-start
+                    flex-direction: column
+                    .text
+                        border-right: none 
+                        border-left: none
+                        &::before, &::after
+                            display: none
+                img, .text
+                    width: 80vw
+        .why_quality_closes .preferance .list
+            flex-wrap: wrap
+            li
+                width: 35%
+                margin: 7px 0
+
+@media ( max-width: 625px )
+    .home_page
+        .why_quality_closes .preferance .list li
+                width: 50%
+        .links
+            flex-wrap: wrap
+            padding-top: 0
+            a
+                margin-bottom: 15px
+
+@media ( max-width: 460px )
+    .home_page
+        .why_quality_closes .preferance .list li
+                width: 80%
+        .links a
+            font-size: 20px
+        .why_people_like_this
+            padding-bottom: 0
+
+@media ( max-width: 380px )
+    .home_page
+        h2.title
+            font-size: 30px
+        h3.subtitle
+            font-size: 24px
+        .what_is_this, .why_quality_closes, .why_people_like_this, .links
+            padding: 20px

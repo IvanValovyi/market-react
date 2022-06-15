@@ -1,0 +1,67 @@
+@import './mixin'
+
+.mob_menu_blok
+    display: none
+    @media ( max-width: 1024px ) 
+        display: block
+    button.mob_menu_btn
+        @include flex (center, center)
+        background: black
+    svg
+        width: 35px
+        height: 35px
+        @media ( max-width: 500px )
+            width: 24px
+            height: 24px
+    .mobile_menu
+        background: black
+        @include flex (center, center, column)
+        position: absolute
+        color: black
+        height: 100vh
+        width: 100vw
+        z-index: 11
+        top: 0
+        left: 0
+        transition: 0.5s
+        transform: translateX(-100%)
+        &.active
+            transform: translateX(0)
+        
+        h2
+            color: white
+            font-size: 24px
+            font-weight: 100
+            position: absolute
+            top: 15px
+            left: 0
+            width: 100%
+            text-align: center
+        .close
+            position: absolute
+            top: 20px
+            right: 20px
+            border: none
+            background: black
+            fill: white
+        .search
+            margin-top: 30px
+            display: block
+            .search_menu
+                position: static
+                width: max-content
+                box-shadow: 0 0 4px 1px white
+                padding: 10px
+                border-radius: 10px
+                @media ( max-width: 440px )
+                    padding: 5px 10px
+                    
+        nav 
+            @include flex (center, center, column)
+            a
+                color: black
+                background: white
+                margin: 10px 0
+                padding: 5px 10px
+                border: 1px solid black
+                font-size: 20px
