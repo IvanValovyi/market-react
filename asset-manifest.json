@@ -1,0 +1,33 @@
+{
+  "files": {
+    "main.css": "/market-react/static/css/main.87a1d5c0.css",
+    "main.js": "/market-react/static/js/main.671c4ceb.js",
+    "static/js/787.f24457f2.chunk.js": "/market-react/static/js/787.f24457f2.chunk.js",
+    "static/media/design.jpg": "/market-react/static/media/design.56333215b195f3d3094e.jpg",
+    "static/media/personal.jpg": "/market-react/static/media/personal.8c73f18ba9603bd9213c.jpg",
+    "static/media/quality.jpg": "/market-react/static/media/quality.fed3e26cd7afab4e312d.jpg",
+    "static/media/sprite.svg": "/market-react/static/media/sprite.bcf5089cf1c72650d0b03dc157460270.svg",
+    "static/media/telegram.svg": "/market-react/static/media/telegram.d345f10076d88aef63dc.svg",
+    "static/media/personal.svg": "/market-react/static/media/personal.7d90c625d310cd5d622d.svg",
+    "static/media/discord.svg": "/market-react/static/media/discord.fe164190ac595e7e969e.svg",
+    "static/media/location.svg": "/market-react/static/media/location.8092aa9b8da27f7bae93.svg",
+    "static/media/price.svg": "/market-react/static/media/price.6805b6c1516256218659.svg",
+    "index.html": "/market-react/index.html",
+    "static/media/strong.svg": "/market-react/static/media/strong.c97d7cda5e1061ff5182.svg",
+    "static/media/phone.svg": "/market-react/static/media/phone.55170e2f932be4f1ac63.svg",
+    "static/media/basket.svg": "/market-react/static/media/basket.278df8f2841543796d39.svg",
+    "static/media/gmail.svg": "/market-react/static/media/gmail.bfb71d1bd47f80cf9554.svg",
+    "static/media/search.svg": "/market-react/static/media/search.65a7fd1428ac118d9cf1.svg",
+    "static/media/plus.svg": "/market-react/static/media/plus.11a0880f45bca649f6a4.svg",
+    "static/media/tick.svg": "/market-react/static/media/tick.d5af0e8d3235db66d51c.svg",
+    "static/media/close.svg": "/market-react/static/media/close.2a6dcf09223357a4829d.svg",
+    "static/media/menu.svg": "/market-react/static/media/menu.e80aef55e698cae7e95e.svg",
+    "main.87a1d5c0.css.map": "/market-react/static/css/main.87a1d5c0.css.map",
+    "main.671c4ceb.js.map": "/market-react/static/js/main.671c4ceb.js.map",
+    "787.f24457f2.chunk.js.map": "/market-react/static/js/787.f24457f2.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.87a1d5c0.css",
+    "static/js/main.671c4ceb.js"
+  ]
+}
