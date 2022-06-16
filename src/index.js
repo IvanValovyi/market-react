@@ -20,7 +20,7 @@ import reportWebVitals from './reportWebVitals';
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
-    <BrowserRouter>
+    <BrowserRouter basename='/market-react'>
       <Routes>
         <Route path='/' element={<Layout child={<App/>}></Layout>}/>
         <Route path='/shop' element={<Layout child={<ProductList/>}></Layout>}>

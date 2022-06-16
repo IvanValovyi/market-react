@@ -11,7 +11,7 @@ function SearchPage(){
 
     useEffect(()=>{
         if(input_val){
-            get_data(`https://market-api-ivan.herokuapp.com/search/${input_val}`, setSearchResult)
+            get_data(`https://market-api-ivan.herokuapp.com/products/search/${input_val}`, setSearchResult)
         }
     }, [input_val])
 
