@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/market-react/static/css/main.49e42c87.css",
+    "main.css": "/market-react/static/css/main.f4b70bf0.css",
     "main.js": "/market-react/static/js/main.9beea3a8.js",
     "static/js/787.f24457f2.chunk.js": "/market-react/static/js/787.f24457f2.chunk.js",
     "static/media/design.jpg": "/market-react/static/media/design.56333215b195f3d3094e.jpg",
@@ -22,12 +22,12 @@
     "static/media/tick.svg": "/market-react/static/media/tick.d5af0e8d3235db66d51c.svg",
     "static/media/close.svg": "/market-react/static/media/close.2a6dcf09223357a4829d.svg",
     "static/media/menu.svg": "/market-react/static/media/menu.e80aef55e698cae7e95e.svg",
-    "main.49e42c87.css.map": "/market-react/static/css/main.49e42c87.css.map",
+    "main.f4b70bf0.css.map": "/market-react/static/css/main.f4b70bf0.css.map",
     "main.9beea3a8.js.map": "/market-react/static/js/main.9beea3a8.js.map",
     "787.f24457f2.chunk.js.map": "/market-react/static/js/787.f24457f2.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.49e42c87.css",
+    "static/css/main.f4b70bf0.css",
     "static/js/main.9beea3a8.js"
   ]
 }
