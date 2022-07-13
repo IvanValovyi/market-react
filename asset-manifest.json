@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/market-react/static/css/main.f4b70bf0.css",
-    "main.js": "/market-react/static/js/main.988c51cc.js",
+    "main.js": "/market-react/static/js/main.493bff00.js",
     "static/js/787.f24457f2.chunk.js": "/market-react/static/js/787.f24457f2.chunk.js",
     "static/media/design.jpg": "/market-react/static/media/design.56333215b195f3d3094e.jpg",
     "static/media/personal.jpg": "/market-react/static/media/personal.8c73f18ba9603bd9213c.jpg",
@@ -23,11 +23,11 @@
     "static/media/close.svg": "/market-react/static/media/close.2a6dcf09223357a4829d.svg",
     "static/media/menu.svg": "/market-react/static/media/menu.e80aef55e698cae7e95e.svg",
     "main.f4b70bf0.css.map": "/market-react/static/css/main.f4b70bf0.css.map",
-    "main.988c51cc.js.map": "/market-react/static/js/main.988c51cc.js.map",
+    "main.493bff00.js.map": "/market-react/static/js/main.493bff00.js.map",
     "787.f24457f2.chunk.js.map": "/market-react/static/js/787.f24457f2.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.f4b70bf0.css",
-    "static/js/main.988c51cc.js"
+    "static/js/main.493bff00.js"
   ]
 }
